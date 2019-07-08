@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="a14-3J-8Yo">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="MarkerFeltWide.ttf">
+            <string>MarkerFelt-Wide</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Home-->
+        <scene sceneID="igD-g1-aRH">
+            <objects>
+                <viewController id="tUB-07-EPd" customClass="HomeView" customModule="DriveEye" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vLm-mk-XuH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.45000000000000001" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Purple-Blue-Bubbles" translatesAutoresizingMaskIntoConstraints="NO" id="s0M-tR-SP8">
+                                <rect key="frame" x="0.0" y="-48" width="375" height="734"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="96c-0D-Vk1">
+                                <rect key="frame" x="121.5" y="544" width="132" height="45"/>
+                                <color key="backgroundColor" red="0.13725490196078433" green="0.61960784313725492" blue="0.66274509803921566" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="25"/>
+                                <state key="normal" title="  Start trip  ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" red="0.21267810879999999" green="0.21267810879999999" blue="0.21267810879999999" alpha="0.21118507919999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="startTribAction:" destination="tUB-07-EPd" eventType="touchUpInside" id="Jgu-SG-8sV"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" 00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a4G-zZ-ew8">
+                                <rect key="frame" x="149.5" y="495.5" width="76" height="32.5"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="25"/>
+                                <color key="textColor" red="0.20321073052309999" green="0.26305674822226621" blue="0.26417750634517767" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="5hs-Uk-SBl">
+                                <rect key="frame" x="265" y="322.5" width="74" height="73"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="season" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7dH-B8-7R0">
+                                        <rect key="frame" x="0.0" y="0.0" width="74" height="32.5"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="25"/>
+                                        <color key="textColor" red="0.20321073052309999" green="0.26305674822226621" blue="0.26417750634517767" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hsd-Q3-WSH">
+                                        <rect key="frame" x="0.0" y="40.5" width="74" height="32.5"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="25"/>
+                                        <color key="textColor" red="0.20321073052309999" green="0.26305674822226621" blue="0.26417750634517767" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="2dx-kz-XO5">
+                                <rect key="frame" x="36" y="322.5" width="48" height="73"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="level" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="etK-Bz-xMx">
+                                        <rect key="frame" x="0.0" y="0.0" width="48" height="32.5"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="25"/>
+                                        <color key="textColor" red="0.20321073052309999" green="0.26305674822226621" blue="0.26417750634517767" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lhT-en-P7d">
+                                        <rect key="frame" x="0.0" y="40.5" width="48" height="32.5"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="25"/>
+                                        <color key="textColor" red="0.20321073052309999" green="0.26305674822226621" blue="0.26417750634517767" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="b8E-Ti-XMI">
+                                <rect key="frame" x="149" y="66" width="77" height="32.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="score:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eD7-5T-H8l">
+                                        <rect key="frame" x="0.0" y="0.0" width="64" height="32.5"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="25"/>
+                                        <color key="textColor" red="0.20321073052309999" green="0.26305674822226621" blue="0.26417750634517767" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wgh-Wm-QHu">
+                                        <rect key="frame" x="72" y="0.0" width="5" height="32.5"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="20"/>
+                                        <color key="textColor" red="0.20321073052309999" green="0.26305674822226621" blue="0.26417750634517767" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ScoreCup" translatesAutoresizingMaskIntoConstraints="NO" id="ix2-N5-uGc">
+                                <rect key="frame" x="169" y="28" width="37" height="38"/>
+                                <color key="tintColor" red="0.29172545671463013" green="0.97007101774215698" blue="0.050933316349983215" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="37" id="QTK-js-E3U"/>
+                                    <constraint firstAttribute="height" constant="38" id="TOT-9u-stO"/>
+                                </constraints>
+                            </imageView>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eiU-EM-qV3">
+                                <rect key="frame" x="67.5" y="114.5" width="240" height="200"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="JS3-ca-K5T"/>
+                                    <constraint firstAttribute="width" constant="240" id="MyU-qN-gag"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="a4G-zZ-ew8" firstAttribute="centerX" secondItem="YkC-XW-A0M" secondAttribute="centerX" id="9DG-Rw-oPV"/>
+                            <constraint firstItem="s0M-tR-SP8" firstAttribute="centerX" secondItem="YkC-XW-A0M" secondAttribute="centerX" id="C8Y-aR-f1d"/>
+                            <constraint firstItem="YkC-XW-A0M" firstAttribute="trailing" secondItem="5hs-Uk-SBl" secondAttribute="trailing" constant="36" id="PEz-RD-Y0w"/>
+                            <constraint firstItem="2dx-kz-XO5" firstAttribute="top" secondItem="eiU-EM-qV3" secondAttribute="bottom" constant="8" id="PzE-zM-bCI"/>
+                            <constraint firstItem="96c-0D-Vk1" firstAttribute="top" secondItem="a4G-zZ-ew8" secondAttribute="bottom" constant="16" id="XFQ-ND-eSP"/>
+                            <constraint firstItem="YkC-XW-A0M" firstAttribute="bottom" secondItem="96c-0D-Vk1" secondAttribute="bottom" constant="29" id="YHU-ys-2kt"/>
+                            <constraint firstItem="2dx-kz-XO5" firstAttribute="leading" secondItem="YkC-XW-A0M" secondAttribute="leading" constant="36" id="cA1-w1-OYT"/>
+                            <constraint firstItem="s0M-tR-SP8" firstAttribute="width" secondItem="vLm-mk-XuH" secondAttribute="width" id="cCJ-w5-21L"/>
+                            <constraint firstItem="ix2-N5-uGc" firstAttribute="centerX" secondItem="b8E-Ti-XMI" secondAttribute="centerX" id="dUL-kP-6E3"/>
+                            <constraint firstItem="ix2-N5-uGc" firstAttribute="centerX" secondItem="YkC-XW-A0M" secondAttribute="centerX" id="gQu-e1-LM2"/>
+                            <constraint firstItem="s0M-tR-SP8" firstAttribute="centerY" secondItem="YkC-XW-A0M" secondAttribute="centerY" id="iii-De-x57"/>
+                            <constraint firstItem="5hs-Uk-SBl" firstAttribute="top" secondItem="eiU-EM-qV3" secondAttribute="bottom" constant="8" id="nFs-u9-sf2"/>
+                            <constraint firstItem="eiU-EM-qV3" firstAttribute="centerX" secondItem="YkC-XW-A0M" secondAttribute="centerX" id="oY3-eA-9vT"/>
+                            <constraint firstItem="eiU-EM-qV3" firstAttribute="top" secondItem="b8E-Ti-XMI" secondAttribute="bottom" constant="16" id="qd4-Ip-xxB"/>
+                            <constraint firstItem="b8E-Ti-XMI" firstAttribute="top" secondItem="ix2-N5-uGc" secondAttribute="bottom" id="sjs-oG-hz4"/>
+                            <constraint firstItem="96c-0D-Vk1" firstAttribute="centerX" secondItem="YkC-XW-A0M" secondAttribute="centerX" id="t2q-7p-yzr"/>
+                            <constraint firstItem="s0M-tR-SP8" firstAttribute="height" secondItem="vLm-mk-XuH" secondAttribute="height" multiplier="1.1" id="tVh-4k-l4d"/>
+                            <constraint firstItem="ix2-N5-uGc" firstAttribute="top" secondItem="YkC-XW-A0M" secondAttribute="top" constant="8" id="xxk-Ch-BfE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="YkC-XW-A0M"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="home" id="8ir-hs-3iT"/>
+                    <connections>
+                        <outlet property="btnStartTrip" destination="96c-0D-Vk1" id="YoB-SN-LBM"/>
+                        <outlet property="leveLBL" destination="lhT-en-P7d" id="wAK-Cy-umS"/>
+                        <outlet property="scoreLBL" destination="wgh-Wm-QHu" id="a0X-pW-28C"/>
+                        <outlet property="sesonNumberLBL" destination="hsd-Q3-WSH" id="uts-BS-Wnc"/>
+                        <outlet property="timeLBL" destination="a4G-zZ-ew8" id="lVm-rZ-9Ac"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i8M-bO-mJ1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1320.8" y="57.121439280359823"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="LQF-g2-88t">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Profile" id="7XZ-rM-qdr" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="van-HJ-Ujn"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6PJ-lO-eqn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1077" y="-479"/>
+        </scene>
+        <!--League-->
+        <scene sceneID="7Cv-kz-VqT">
+            <objects>
+                <viewControllerPlaceholder storyboardName="League" id="j0E-iD-wZs" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" badgeValue="League" systemItem="mostViewed" id="rN1-EJ-Nqy"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Its-1a-5H5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1083" y="-428"/>
+        </scene>
+        <!--Coach-->
+        <scene sceneID="gAj-aW-2VL">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Coach" id="wvJ-0C-S6n" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Coaching" badgeValue="Coaching" id="EeS-f9-9M4">
+                        <color key="badgeColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Oz8-Jn-W7V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1079" y="-372"/>
+        </scene>
+        <!--Season-->
+        <scene sceneID="PrD-fZ-1mr">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Season" id="H81-dw-dTn" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="zO5-cM-1WE"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TYn-lD-Nzu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1082" y="-325"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="eoI-a9-K43">
+            <objects>
+                <tabBarController storyboardIdentifier="HomeStore" id="a14-3J-8Yo" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1DF-f2-YVh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="tUB-07-EPd" kind="relationship" relationship="viewControllers" id="Q52-RG-QeM"/>
+                        <segue destination="H81-dw-dTn" kind="relationship" relationship="viewControllers" id="l1L-gT-5jr"/>
+                        <segue destination="j0E-iD-wZs" kind="relationship" relationship="viewControllers" id="b5W-MH-6wD"/>
+                        <segue destination="wvJ-0C-S6n" kind="relationship" relationship="viewControllers" id="ilX-ke-ymV"/>
+                        <segue destination="7XZ-rM-qdr" kind="relationship" relationship="viewControllers" id="aP7-eP-C5a"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="61J-Ge-keF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="274" y="-140"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Purple-Blue-Bubbles" width="640" height="1136"/>
+        <image name="ScoreCup" width="100" height="100"/>
+        <image name="home" width="30" height="30"/>
+    </resources>
+</document>
